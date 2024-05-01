@@ -91,6 +91,7 @@ pipeline {
                 echo 'Adding another stage to commit automatically'
                 
             }
+            }
         }
     }
 }
