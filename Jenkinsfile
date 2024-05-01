@@ -80,18 +80,18 @@ pipeline {
                 }
             }
         }
+    }
 
-        stage('Deploy to Production') {
-            steps {
-                echo 'Deploying the application to a production server (e.g., AWS EC2 instance)'
-                // Deploy to production tasks
-            }
-            stage('New Stage') {
-            steps {
-                echo 'Adding another stage to commit automatically'
-                
-            }
-            }
+    stage('Deploy to Production') {
+        steps {
+            echo 'Deploying the application to a production server (e.g., AWS EC2 instance)'
+            // Deploy to production tasks
+        }
+    }
+
+    stage('New Stage') {
+        steps {
+            echo 'Adding another stage to commit automatically'
         }
     }
 }
